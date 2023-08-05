@@ -1,0 +1,534 @@
+/*FONTS-------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&display=swap');
+/*'#*/
+/* RESET CSS-------------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* MODO OSCURO------------------------------------------*/
+
+body.cambio-fondo{
+    background-image: url("/img/fondo\ oscuro.png");
+    color: #fafafa;
+}
+
+body.cambio-fondo .descripcion {
+    background: rgba(0,0,0,0.7);
+}
+
+body.cambio-fondo #Portafolio {
+    background: rgba(0,0,0,0.7);
+}
+
+body.cambio-fondo .frase {
+    background: rgba(255,255,255,0.7);
+    color: #0f0f0f;
+}
+
+
+/*CSS BASE----------------------------------------------*/
+
+body{
+    font-family: 'Expletus Sans', cursive;
+    line-height: 1.5;
+    background-image: url("/img/FONDO\ 3.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    color: #0f0f0f;
+}
+
+h1{
+    font-size: 50px;
+    padding: 10px;
+}
+
+h2{
+    text-align: justify;
+    font-size: 35px;
+}
+
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+/*MENU--------------------------------------------------*/
+.header {
+    max-width: 100%;
+    background-color: #c3002c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 7%;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 6px 10px -5px #4e4b4b;
+}
+
+.logo {
+    margin-top: 10px;
+    padding: 20px;
+    width: 30vmax;
+    height: auto;
+}
+
+#menu-btn {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    width: 40px;
+    height: 40px;           
+}
+
+ul#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+svg#close-menu {
+    display: none;
+}
+
+nav{
+    display: none;
+}
+
+li{
+    list-style: none;
+    margin: 10px;
+}
+
+li.menu-item a {
+    text-decoration:  none;
+    color: #0f0f0f;
+    padding: 5px;
+    display: inline-block;
+}
+.deskBtns{
+    display: flex;
+    justify-content: space-between;
+}
+/*ESTILOS PARA CLASES ACTIVE Y HOVER*/
+li.menu-item:hover,
+li.menu-item a.active,
+a.btn:hover {
+    background-color: #d2d2d2;
+    border-radius: 10px;
+    padding: 1px;
+    color: #fafafa;
+    transition: background-color 0.3s;
+}
+
+/*BOTON MODO NOCTURNO-----------------------------------------*/
+        
+#modo-nocturno{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 32px;
+    width: 40px;
+    height: 40px;   
+}
+
+svg#close-icono {
+    display: none;
+}
+
+/*SLIDER-----------------------------------------------------*/
+
+.slider{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    width: 300%;
+    padding: 0;
+    animation: cambio 20s infinite ;
+}
+.slider li{
+    padding: 70px 0 0 0;
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+}
+
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+}
+
+/*SECCION 1_ALGO DE MI----------------------------------------*/
+
+#algo-de-mi{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+img.yo{
+    width: 300px;
+    border-radius: 50%;
+    border: solid 5px #a4a4a4;
+    margin-bottom: 50px;
+}
+
+.descripcion h2{
+    text-align: center;
+ }
+
+.descripcion{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(201,201,201,0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.frase{
+    text-align: center;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 30px;
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    margin: 0% 20%;
+    border-radius: 10px;
+}
+
+/* SECCION2_LINEA DE TIEMPO --------------------------------*/
+
+#timeline{
+    /*background-size: contain;*/
+    content:'';
+    position: relative;
+    background: rgb(4,4,4);
+    width: 1px;
+    left: 50%;
+}
+    
+.child{
+    position: relative;
+    margin: 20px;
+    /*opacity:0;*/
+}
+
+    /*PARES---------*/
+.chil:nth-child(odd){
+    float: left;
+    /*efecto vidrio*/
+    border-radius:  0px 20px 20px 20px;
+    text-align:  left;
+    box-shadow:  0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+    /*circulos*/
+.child:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    background: rgb(0,0,0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: -30px;
+}
+
+    /*lineas*/
+.child:nth-child(odd)::after{
+    content: '';
+    position: absolute;
+    background: rgb(5,5,5);
+    width: 10px;
+    height: 2px;
+    left: -10px;
+    top: 10px;
+}
+    
+    /*IMPARES---------*/
+.child:nth-child(even){
+    float: right;
+    /*efecto vidrio*/
+    border-radius: 20px 0px 20px 20px;
+    text-align: right;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    Border: 1px solid rgba(255,255,255,0.3);
+}
+    
+    /*circulos*/
+.child:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    background: rgb(0,0,0);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    right: -30px;
+}
+    
+    /*lineas*/
+.child:nth-child(even)::after{
+    content: '';
+    position: absolute;
+    background: rgb(0,0,0);
+    width: 10px;
+    height: 2px;
+    right: -10px;
+    top: 10px;
+}
+.content{
+    width: 450px;
+    padding: 15px;
+    color: rgb(10,10,10);
+    background: rgba(255,255,255,0.2)
+}
+    
+    /*animacion de timeline*/
+._show{
+    opacity: 1;
+    animation: __show 1s cubic-bezier(.99,-.7,.2,1.9);
+}
+._hide{
+    opacity: 1;
+    animation: __hide 1s cubic-bezier(.99,-.7,.2,1.9);
+}
+
+@keyframes __show {
+        0% { transform: translateY(500px); opacity: 0;}
+        100%{ transform: translateY(0); opacity: 1;}
+}
+@keyframes __hide {
+        0% { transform: translateY(0); opacity: 1;}
+        100%{ transform: translateY(500px); opacity: 0;}
+}
+
+
+/* SECTION 3_PORTAFOLIO FOTOGRAFICO-----------------------*/
+
+#Portafolio {
+    overflow:hidden;
+    max-width: 80%;
+    background: rgba(201, 201, 201, 0.6);
+    margin: auto;
+    padding: 50px;
+}
+
+#experiencia-list{
+    text-align: justify;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#experiencia-list li{
+    max-width: 600px;
+    margin-top: 50px;
+}
+  
+#experiencia-list img {
+    width: 600px;
+}
+
+/*SECCIO 4_CONOCIMIENTOS---------------------------------------*/
+
+
+
+
+
+
+/*SECCION 5_CONTACTO------------------------------------------*/
+
+#contacto li{
+    background-color: #fafafa;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+#formulario h3{
+    text-align: center;
+    margin: 0;
+    font-size: 20PX;
+    margin-bottom: 10px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background-color: #4e4b4b;
+    color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#boton:hover{
+    cursor:pointer; 
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }  
+}
+
+#respuesta{
+    text-align: center;
+    font-size: 50px;
+    background: rgba(0,0,0,0.6);
+    color: #fafafa;
+    margin-top: 50%;
+
+}
+
+/* FOOTER------------------------------------------------------*/
+footer{
+    background-color: #01016d;
+    height: 200px;
+    color: #fafafa;
+    text-align: center;
+    padding: 50px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 80px;
+}
+
+.instagram{
+    width: 40px ;
+}
+.facebook{
+    width: 40px ;
+}
+.linkedin{
+    width: 40px ;
+}
+
+/*-----------------------ESPACIO MOBILE----------------------*/
+
+/*menu*/
+
+body.mobile-menu-active{
+    overflow:hidden;
+}
+
+body.mobile-menu-active svg#close-menu{
+    display:block;
+}
+
+body.mobile-menu-active svg#open-menu{
+    display: none;
+}
+
+body.mobile-menu-active header{
+    height: 45vh;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    transition: height 0.4s;
+}
+
+body.mobile-menu-active nav{
+    display: block;
+    width: 100%;
+    height: 50%;
+}
+
+body.mobile-menu-active ul#menu{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+/*boton modo-nocturno*/
+
+body.mobile-modoNocturno-active svg#close-icono{
+    display:block;
+}
+
+body.mobile-modoNocturno-active svg#open-icono{
+    display: none;
+}
+
+/*----------------------ESPACIO DESKTOP------------------------*/
+
+@media (min-width:1024px){
+
+section#algo-de-mi{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+article.descripcion{
+    text-align: justify;
+    width: 50%;
+}
+h1{
+    font-size: 48px;
+    text-align: left;
+}
+img.yo{
+    width: 450px;
+    
+}
+#menu-btn{
+    display: none;
+}
+nav{
+    display: block;
+}}
