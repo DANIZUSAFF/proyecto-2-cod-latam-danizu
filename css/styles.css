@@ -31,7 +31,43 @@ body.cambio-fondo .frase {
     color: #0f0f0f;
 }
 
+body.cambio-fondo #timeline{
+    background: rgba(255,255,255,0.7);
+    width: 3px;
+}
 
+body.cambio-fondo .content{
+    color: rgb(255, 255, 255);
+    background: rgba(0,0,0,0.5)
+}
+
+body.cambio-fondo .child:nth-child(odd)::before{
+    background: rgb(255, 255, 255);
+}
+
+body.cambio-fondo .child:nth-child(even)::before{
+    background: rgb(255, 255, 255);
+}
+
+body.cambio-fondo .child:nth-child(odd)::after{
+    background: rgb(255, 255, 255);
+}
+
+body.cambio-fondo .child:nth-child(even)::after{
+    background: rgb(255, 255, 255);
+}
+
+body.cambio-fondo #conocimientos {
+    background: rgba(0,0,0,0.7);
+}
+
+body.cambio-fondo #Contacto {
+    background: rgba(0,0,0,0.7);
+}
+
+body.cambio-fondo form {
+    background: rgba(255,255,255,0.1);
+}
 /*CSS BASE----------------------------------------------*/
 
 body{
@@ -45,13 +81,13 @@ body{
 }
 
 h1{
-    font-size: 50px;
+    font-size: 48px;
     padding: 10px;
 }
 
 h2{
     text-align: justify;
-    font-size: 35px;
+    font-size: 32px;
 }
 
 p{
@@ -67,17 +103,19 @@ p{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    height: 7%;
+    height: 8%;
     padding: 15px;
     width: 100%;
     box-shadow: 0 6px 10px -5px #4e4b4b;
+    z-index:1;
 }
 
 .logo {
     margin-top: 10px;
-    padding: 20px;
-    width: 30vmax;
-    height: auto;
+    padding: 10px;
+    max-width: 50%;
+    width: 50vmax;
+    height: 80%;
 }
 
 #menu-btn {
@@ -106,25 +144,23 @@ nav{
 li{
     list-style: none;
     margin: 10px;
+    padding: 3px;
 }
 
 li.menu-item a {
+    
+    text-align: center;
     text-decoration:  none;
     color: #0f0f0f;
-    padding: 5px;
     display: inline-block;
 }
-.deskBtns{
-    display: flex;
-    justify-content: space-between;
-}
+
 /*ESTILOS PARA CLASES ACTIVE Y HOVER*/
 li.menu-item:hover,
 li.menu-item a.active,
 a.btn:hover {
     background-color: #d2d2d2;
-    border-radius: 10px;
-    padding: 1px;
+    border-radius: 5px;
     color: #fafafa;
     transition: background-color 0.3s;
 }
@@ -180,6 +216,7 @@ svg#close-icono {
 /*SECCION 1_ALGO DE MI----------------------------------------*/
 
 #algo-de-mi{
+    margin-top: 150px;
     text-align: justify;
     display: flex;
     flex-direction: column;
@@ -221,7 +258,7 @@ img.yo{
     font-size: 30px;
     background: rgba(0,0,0,0.6);
     padding: 20px;
-    margin: 0% 20%;
+    margin: 15% 20% 25%;
     border-radius: 10px;
 }
 
@@ -229,7 +266,7 @@ img.yo{
 
 #timeline{
     /*background-size: contain;*/
-    content:'';
+    content: '';
     position: relative;
     background: rgb(4,4,4);
     width: 1px;
@@ -269,7 +306,7 @@ img.yo{
 .child:nth-child(odd)::after{
     content: '';
     position: absolute;
-    background: rgb(5,5,5);
+    background: rgb(0,0,0);
     width: 10px;
     height: 2px;
     left: -10px;
@@ -309,33 +346,13 @@ img.yo{
     right: -10px;
     top: 10px;
 }
+
 .content{
-    width: 450px;
+    width: 250px;
     padding: 15px;
     color: rgb(10,10,10);
-    background: rgba(255,255,255,0.2)
 }
     
-    /*animacion de timeline*/
-._show{
-    opacity: 1;
-    animation: __show 1s cubic-bezier(.99,-.7,.2,1.9);
-}
-._hide{
-    opacity: 1;
-    animation: __hide 1s cubic-bezier(.99,-.7,.2,1.9);
-}
-
-@keyframes __show {
-        0% { transform: translateY(500px); opacity: 0;}
-        100%{ transform: translateY(0); opacity: 1;}
-}
-@keyframes __hide {
-        0% { transform: translateY(0); opacity: 1;}
-        100%{ transform: translateY(500px); opacity: 0;}
-}
-
-
 /* SECTION 3_PORTAFOLIO FOTOGRAFICO-----------------------*/
 
 #Portafolio {
@@ -344,6 +361,8 @@ img.yo{
     background: rgba(201, 201, 201, 0.6);
     margin: auto;
     padding: 50px;
+    margin-top: 350px;
+    margin-bottom: 150px;
 }
 
 #experiencia-list{
@@ -355,25 +374,60 @@ img.yo{
 }
 
 #experiencia-list li{
+    width: 100%;
     max-width: 600px;
     margin-top: 50px;
 }
   
 #experiencia-list img {
-    width: 600px;
+    width: 100%;
 }
 
 /*SECCIO 4_CONOCIMIENTOS---------------------------------------*/
+#conocimientos{
+    margin: auto;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    max-width: 600px;
+    min-width: 400px;
+    padding: 30px;
+    background: rgba(255,255,255,0.7)
+}
 
+#conocimientos h2{
+    text-align: center;
+}
 
+#conocimientos ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-
-
+/*BOTON DESCARGA CV--------------------------------------------*/
+#botoncv{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    max-width: 300px;
+    margin: auto;
+    background-color: #c3002c;
+    color: #fbfbfb;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 150px;
+}
 
 /*SECCION 5_CONTACTO------------------------------------------*/
 
-#contacto li{
-    background-color: #fafafa;
+#Contacto{
+    margin: 20%;
+    margin-top: 300px;
+    padding: 25px;
+    background: rgba(255,255,255,0.7);
 }
 
 form{
@@ -419,7 +473,7 @@ textarea{
     cursor:pointer; 
 }
 
-@media (max-width:480px){
+@media (max-width:767px){
     form{
         width: 100%;
     }  
@@ -431,7 +485,6 @@ textarea{
     background: rgba(0,0,0,0.6);
     color: #fafafa;
     margin-top: 50%;
-
 }
 
 /* FOOTER------------------------------------------------------*/
@@ -477,7 +530,7 @@ body.mobile-menu-active svg#open-menu{
 }
 
 body.mobile-menu-active header{
-    height: 45vh;
+    height: 60vh;
     flex-wrap: wrap;
     align-items: flex-start;
     transition: height 0.4s;
@@ -506,6 +559,57 @@ body.mobile-modoNocturno-active svg#open-icono{
     display: none;
 }
 
+@media (max-width:767px){
+    .header{
+        max-width: 100%;
+    }
+    h1{
+        font-size: 28px;
+    }
+    
+    h2{
+        font-size: 22px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+    img.yo{
+        width: 100%;
+    }
+    .frase{
+        font-size: 20px;
+    }
+
+    #timeline{
+        max-width: 70%;
+        left: 10%;
+    }
+           
+        /*IMPARES---------*/
+    .child:nth-child(even){
+        float: left;
+    }
+        
+        /*circulos*/
+    .child:nth-child(even)::before{
+        left: -30px;
+    }
+        
+        /*lineas*/
+    .child:nth-child(even)::after{
+        left: -10px;
+    }
+    .content{
+        width: 80vw;
+    } 
+    .redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 80px;
+    }
+}
 /*----------------------ESPACIO DESKTOP------------------------*/
 
 @media (min-width:1024px){
@@ -524,7 +628,6 @@ h1{
 }
 img.yo{
     width: 450px;
-    
 }
 #menu-btn{
     display: none;
