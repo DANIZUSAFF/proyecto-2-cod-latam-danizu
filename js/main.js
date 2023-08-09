@@ -38,7 +38,7 @@ interaccionModoNocturno.addEventListener('click', function () {
 
 
 /*Portafolio fotografico---------------*/
-window.alert('¡Bienvenidos a nuestra pagina web!...❤✨ Recorre cada una de las secciones y descubre nuestros trabajos.');
+/*window.alert('¡Bienvenidos a nuestra pagina web!...❤✨ Recorre cada una de las secciones y descubre nuestros trabajos.');*/
 
 let experiencias = [
     {
