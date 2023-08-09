@@ -103,7 +103,7 @@ p{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    height: 8%;
+    height: 70px;
     padding: 15px;
     width: 100%;
     box-shadow: 0 6px 10px -5px #4e4b4b;
@@ -115,7 +115,6 @@ p{
     padding: 10px;
     max-width: 50%;
     width: 50vmax;
-    height: 80%;
 }
 
 #menu-btn {
@@ -130,7 +129,12 @@ ul#menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+}
+
+svg{
+    height: 30px;
 }
 
 svg#close-menu {
@@ -161,8 +165,11 @@ li.menu-item a.active,
 a.btn:hover {
     background-color: #d2d2d2;
     border-radius: 5px;
-    color: #fafafa;
+    color: #000000;
     transition: background-color 0.3s;
+}
+section {
+    scroll-margin-top: 90px;
 }
 
 /*BOTON MODO NOCTURNO-----------------------------------------*/
@@ -265,7 +272,6 @@ img.yo{
 /* SECCION2_LINEA DE TIEMPO --------------------------------*/
 
 #timeline{
-    /*background-size: contain;*/
     content: '';
     position: relative;
     background: rgb(4,4,4);
@@ -360,7 +366,7 @@ img.yo{
     max-width: 80%;
     background: rgba(201, 201, 201, 0.6);
     margin: auto;
-    padding: 50px;
+    padding: 80px;
     margin-top: 350px;
     margin-bottom: 150px;
 }
@@ -388,8 +394,7 @@ img.yo{
     margin: auto;
     margin-top: 250px;
     margin-bottom: 250px;
-    max-width: 600px;
-    min-width: 400px;
+    max-width: 60%;
     padding: 30px;
     background: rgba(255,255,255,0.7)
 }
@@ -563,6 +568,9 @@ body.mobile-modoNocturno-active svg#open-icono{
     .header{
         max-width: 100%;
     }
+    svg{
+        height: 20px;
+    }
     h1{
         font-size: 28px;
     }
@@ -574,9 +582,7 @@ body.mobile-modoNocturno-active svg#open-icono{
     p{
         font-size: 16px;
     }
-    img.yo{
-        width: 100%;
-    }
+
     .frase{
         font-size: 20px;
     }
@@ -627,7 +633,7 @@ h1{
     text-align: left;
 }
 img.yo{
-    width: 450px;
+    width: 400px;
 }
 #menu-btn{
     display: none;

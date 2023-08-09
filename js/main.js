@@ -38,23 +38,23 @@ interaccionModoNocturno.addEventListener('click', function () {
 
 
 /*Portafolio fotografico---------------*/
-/*window.alert('¡Bienvenidos! ❤✨');*/
+window.alert('¡Bienvenidos a nuestra pagina web!...❤✨ Recorre cada una de las secciones y descubre nuestros trabajos.');
 
 let experiencias = [
     {
-        tema: 'ARQUITECTURA_1',
+        tema: 'ARQUITECTURA',
         obra: 'Sistema de transporte Cable Tren, Caracas, Venezuela',
         trabajo: 'Revestimiento de fachadas internas de estaciones en sistema de paneles fachada ventilada Faveton',
         img: 'img/1.2.jpg'
     },
     {
-        tema: 'ARQUITECTURA_2',
+        tema: 'ARQUITECTURA',
         obra: 'Mausoleo Simón Bolívar, Caracas, Venezuela',
         trabajo: 'Revestimiento de fachadas externas en Faveton e internas en Swisspearl y acabado de pisos en mármol',
         img: 'img/2.1.jpg'
     },
     {
-        tema: 'ARQUITECTURA_3',
+        tema: 'ARQUITECTURA',
         obra: 'Estadio Polideportivo de Pueblo Nuevo, Táchira, Venezuela',
         trabajo: 'Acabados internos de techos, paredes y palcos presidenciales y cabinas de transmisión TV',
         img: 'img/3.3.jpg'
@@ -119,62 +119,62 @@ const learning = [
     {
         year: "1997 - 2006",
         direction: "Táchira - Venezuela",
-        name: "formacion en Arquitectura",
-        description: "UNET Universidad Nacional Experimental del Táchira, Estudios Carrera de Arquitectura, duracion de 6 años incluyendo 1 año de pasantias y 1 año de tesis, estudios de programas autocad 2D y 3D, Inspeccion de obras, Administracion de proyectos"
+        name: "Formación en Arquitectura",
+        description: "UNET Universidad Nacional Experimental del Táchira, Estudios Carrera de Arquitectura, duración de 6 años incluyendo 1 año de pasantías y 1 año de tesis, estudios de programas Autocad 2D y 3D, Inspección de obras, Administración de proyectos"
     },
     {
         year: "2006 - 2007",
         direction: "Táchira - Venezuela",
         name: "Gerente de Proyectos, Ingeniero Residente",
-        description: "Empresa Deco-Instalaciones c.a. Arquitecto proyectista de sala de proyectos, obra: Reconstruccion y acondicionamiento de Estado Polideportivo de Pueblo Nuevo, Ingeniero Residente"
+        description: "Empresa Deco-Instalaciones c.a. Arquitecto proyectista de sala de proyectos, obra: Reconstrucción y acondicionamiento de Estado Polideportivo de Pueblo Nuevo, Ingeniero Residente"
     },
     {
         year: "2007 - 2008",
         direction: "Táchira - Venezuela",
         name: "Supervisor de Obras Regionales",
-        description: "Organismo UCER Unidad Coordinadora de Ejecucion Regional seccion Táchira, Arquitecto supervisor de obras educacionales de construccion, acondicionamiento, cambio de uso y otros"
+        description: "Organismo UCER Unidad Coordinadora de Ejecución Regional sección Táchira, Arquitecto supervisor de obras educacionales de construcción, acondicionamiento, cambio de uso y otros"
     },
     {
         year: "2009",
         direction: "Táchira - Venezuela",
         name: "Arquitecto en jefe Dpto SUVI",
-        description: "Organismo INAVI Instituto Nacional de la Vivienda seccion Táchira, Arquitecto en jefe departamento de proyecto, sustitucion de ranchos por viviendas y barrio adentro"
+        description: "Organismo INAVI Instituto Nacional de la Vivienda sección Táchira, Arquitecto en jefe departamento de proyecto, sustitución de ranchos por viviendas y barrio adentro"
     },
     {
         year: "1999 - 2014",
         direction: "Táchira - Venezuela",
         name: "Diseño Gráfico / Community Manager",
-        description: "Empresa Il Duo Pizzas s.a. Diseño de identidad gráfica, Manual corporativo, material POP, manejo de redes sociales y administracion en general"
+        description: "Empresa Il Duo Pizzas s.a. Diseño de identidad gráfica, Manual corporativo, material POP, manejo de redes sociales y administración en general"
     },
     {
         year: "2013 - 2014",
         direction: "Táchira - Venezuela",
         name: "Gerente General / Arquitecto / Diseño Gráfico",
-        description: "Empresa Desarrollo turistico Floryana c.a. Administracion general de procesos hoteleros, diseño de areas comunes y acondicionamiento de edificaciones eccistentes, creacion de manual de normas y procedimientos, diseño de pagina WEB"
+        description: "Empresa Desarrollo turístico Floryana c.a. Administración general de procesos hoteleros, diseño de áreas comunes y acondicionamiento de edificaciones existentes, creación de manual de normas y procedimientos, diseño de página WEB"
     },
     {
         year: "2014 - 2017",
         direction: "Caracas - Venezuela",
         name: "Arquitecto Comercial",
-        description: "Empresa Desarrollos Koma GPC C.A. Arquitecto tecnico comercial, diseño y construccion; representante de ventas de 5 marcas de mareriales constructivos de acabados internacionales"
+        description: "Empresa Desarrollos Koma GPC C.A. Arquitecto técnico comercial, diseño y construcción; representante de ventas de 5 marcas de materiales constructivos de acabados internacionales"
     },
     {
         year: "2018 - 2021",
         direction: "CABA - Argentina",
-        name: "Supervisor de Manteniminto",
-        description: "Empresa Administracion ColucciCosta recepcion de solicitud de mantenimiento, gestion de contratacion de obra para el mantenimiento de consorcios, control de obra ejecutada, "
+        name: "Supervisor de Mantenimiento",
+        description: "Empresa Administración ColucciCosta recepción de solicitud de mantenimiento, gestión de contratación de obra para el mantenimiento de consorcios, control de obra ejecutada, "
     },
     {
         year: "2021 - Actualidad",
         direction: "CABA - Argentina",
         name: "Director de Ventas on-line / Marketing Digital / Diseño Grafico",
-        description: "Empresa Ferretería Industrial MBJ, asesor tecnico comercial para empresas del gremio de la construccion, representante de ventas on-line, diseño de pagina web y mantenimiento de redes sociales"
+        description: "Empresa Ferretería Industrial MBJ, asesor técnico comercial para empresas del gremio de la construcción, representante de ventas on-line, diseño de página web y mantenimiento de redes sociales"
     },
     {
         year: "Actualidad",
         direction: "CABA - Argentina",
-        name: "Formacion Diseño Web Front End",
-        description: "Academia Eidos - Diseño y creacion de paginas Web en lenguaje HTML, CSS y JS"
+        name: "Formación Diseño Web Front End",
+        description: "Eidos Global / Accenture  - Diseño y creación de páginas Web en lenguaje HTML, CSS y JS"
     }
 ]
 
