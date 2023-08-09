@@ -14,7 +14,7 @@
 /* MODO OSCURO------------------------------------------*/
 
 body.cambio-fondo{
-    background-image: url("./img/fondo_o.jpg");
+    background-image: url("../img/fondo_o.jpg");
     color: #fafafa;
 }
 
@@ -73,7 +73,7 @@ body.cambio-fondo form {
 body{
     font-family: 'Expletus Sans', cursive;
     line-height: 1.5;
-    background-image: url("./img/FONDO_3.jpg");
+    background-image: url("../img/FONDO_3.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-attachment: fixed;
