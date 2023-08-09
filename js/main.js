@@ -45,37 +45,37 @@ let experiencias = [
         tema: 'ARQUITECTURA',
         obra: 'Sistema de transporte Cable Tren, Caracas, Venezuela',
         trabajo: 'Revestimiento de fachadas internas de estaciones en sistema de paneles fachada ventilada Faveton',
-        img: 'img/1.2.jpg'
+        img: './img/1.2.jpg'
     },
     {
         tema: 'ARQUITECTURA',
         obra: 'Mausoleo Simón Bolívar, Caracas, Venezuela',
         trabajo: 'Revestimiento de fachadas externas en Faveton e internas en Swisspearl y acabado de pisos en mármol',
-        img: 'img/2.1.jpg'
+        img: './img/2.1.jpg'
     },
     {
         tema: 'ARQUITECTURA',
         obra: 'Estadio Polideportivo de Pueblo Nuevo, Táchira, Venezuela',
         trabajo: 'Acabados internos de techos, paredes y palcos presidenciales y cabinas de transmisión TV',
-        img: 'img/3.3.jpg'
+        img: './img/3.3.jpg'
     },
     {
         tema: 'MARKETING DIGITAL',
         obra: 'Ferretería Industrial MBJ srl, CABA, Argentina',
         trabajo: 'Ventas Online, Marketing Digital, Diseño de contenido, manejo de redes sociales',
-        img: 'img/4.1.jpg'
+        img: './img/4.1.jpg'
     },
     {
         tema: 'DISEÑO GRAFICO',
         obra: 'Il Duo Pizzas s.a., Táchira, Venezuela',
         trabajo: 'Diseño Identidad gráfica y corporativa de la empresa, diseño de logotipo, manual corporativo y artes gráficas',
-        img: 'img/5.1.jpg'
+        img: './img/5.1.jpg'
     },
     {
         tema: 'DISEÑO WEB',
         obra: 'MDM Designe',
         trabajo: 'Diseño de pagina web biografia',
-        img: 'img/6.jpg'
+        img: './img/6.jpg'
     },
 ];
 
