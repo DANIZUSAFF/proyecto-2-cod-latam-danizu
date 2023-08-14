@@ -90,6 +90,14 @@ h2{
     font-size: 32px;
 }
 
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 22px;
+}
+
 p{
     text-align: justify;
     font-size: 20px;
@@ -168,6 +176,7 @@ a.btn:hover {
     color: #000000;
     transition: background-color 0.3s;
 }
+
 section {
     scroll-margin-top: 90px;
 }
@@ -190,7 +199,7 @@ svg#close-icono {
 /*SLIDER-----------------------------------------------------*/
 
 .slider{
-    width: 85%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
 }
@@ -208,7 +217,6 @@ svg#close-icono {
 .slider img{
     width: 100%;
 }
-
 @keyframes cambio{
     0%{margin-left: 0;}
     20%{margin-left: 0%;}
@@ -271,6 +279,8 @@ img.yo{
 
 /* SECCION2_LINEA DE TIEMPO --------------------------------*/
 
+
+
 #timeline{
     content: '';
     position: relative;
@@ -288,13 +298,6 @@ img.yo{
     /*PARES---------*/
 .chil:nth-child(odd){
     float: left;
-    /*efecto vidrio*/
-    border-radius:  0px 20px 20px 20px;
-    text-align:  left;
-    box-shadow:  0 4px 30px rgba(0,0,0,0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255,255,255,0.3);
 }
 
     /*circulos*/
@@ -322,13 +325,6 @@ img.yo{
     /*IMPARES---------*/
 .child:nth-child(even){
     float: right;
-    /*efecto vidrio*/
-    border-radius: 20px 0px 20px 20px;
-    text-align: right;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    Border: 1px solid rgba(255,255,255,0.3);
 }
     
     /*circulos*/
@@ -354,9 +350,15 @@ img.yo{
 }
 
 .content{
-    width: 250px;
+    width: 360px;
     padding: 15px;
     color: rgb(10,10,10);
+    /*efecto vidrio*/
+    border-radius:  20px 20px 20px 20px;
+    box-shadow:  0 4px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.3);
 }
     
 /* SECTION 3_PORTAFOLIO FOTOGRAFICO-----------------------*/
@@ -381,7 +383,7 @@ img.yo{
 
 #experiencia-list li{
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin-top: 50px;
 }
   
@@ -436,7 +438,7 @@ img.yo{
 }
 
 form{
-    width: 450px;
+    width: 550px;
     margin: auto;
     background: rgba(0,0,0,0.4);
     padding: 10px 20px;
@@ -476,12 +478,6 @@ textarea{
 
 #boton:hover{
     cursor:pointer; 
-}
-
-@media (max-width:767px){
-    form{
-        width: 100%;
-    }  
 }
 
 #respuesta{
@@ -568,6 +564,10 @@ body.mobile-modoNocturno-active svg#open-icono{
     .header{
         max-width: 100%;
     }
+    .slider{
+        width: 100%;
+        margin: auto;
+    }
     svg{
         height: 20px;
     }
@@ -591,7 +591,7 @@ body.mobile-modoNocturno-active svg#open-icono{
         max-width: 70%;
         left: 10%;
     }
-           
+        
         /*IMPARES---------*/
     .child:nth-child(even){
         float: left;
@@ -615,7 +615,23 @@ body.mobile-modoNocturno-active svg#open-icono{
         justify-content: center;
         padding: 0 80px;
     }
+    #Portafolio {
+        margin: auto;
+        padding: 20px;
+        margin-top: 350px;
+        margin-bottom: 150px;
+    }
+    #Contacto{
+        margin: 7%;
+        margin-top: 300px;
+        padding: 25px;
+    }
+    form{
+        width: 100%;
+        margin: auto;
+    }
 }
+
 /*----------------------ESPACIO DESKTOP------------------------*/
 
 @media (min-width:1024px){

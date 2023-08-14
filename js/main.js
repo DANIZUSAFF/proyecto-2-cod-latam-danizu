@@ -32,13 +32,13 @@ const interaccionModoNocturno = document.querySelector('#modo-nocturno');
 
 interaccionModoNocturno.addEventListener('click', function () {
     document.body.classList.toggle('mobile-modoNocturno-active')
-})
+});
 
 
 
 
 /*Portafolio fotografico---------------*/
-/*window.alert('¡Bienvenidos a nuestra pagina web!...❤✨ Recorre cada una de las secciones y descubre nuestros trabajos.');*/
+window.alert('¡Bienvenidos a nuestra pagina web!...❤✨ Recorre cada una de las secciones y descubre nuestros trabajos.');
 
 let experiencias = [
     {
@@ -174,7 +174,7 @@ const learning = [
         year: "Actualidad",
         direction: "CABA - Argentina",
         name: "Formación Diseño Web Front End",
-        description: "Eidos Global / Accenture  - Diseño y creación de páginas Web en lenguaje HTML, CSS y JS"
+        description: "Eidos Global / Accenture - Diseño y creación de páginas Web en lenguaje HTML, CSS y JS"
     }
 ]
 
@@ -182,7 +182,7 @@ const learning = [
 
 var html = "";
 learning.forEach(e=>{
-    html +="<div class='child'><div class='content'><h3>"+e.year+"</h3><h3>"+e.direction+"</h3><h3>"+e.name+"</h3><p>"+e.description+"</p></div> </div>"
+    html +="<div class='child'><div class='content'><h4>"+e.year+"</h4><h4>"+e.direction+"</h4><h4>"+e.name+"</h4><p>"+e.description+"</p></div></div>"
 })
 timeline.innerHTML = html
 
