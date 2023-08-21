@@ -37,11 +37,11 @@ body.cambio-fondo #timeline{
 }
 
 body.cambio-fondo .content{
-    color: rgb(255, 255, 255);
+    color: rgb(245, 245, 245);
     box-shadow:  0 4px 30px rgba(0,0,0,0.3);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(47, 47, 47, 0.7);
 }
 
 body.cambio-fondo .child:nth-child(odd)::before{
@@ -111,11 +111,11 @@ p{
     max-width: 100%;
     background-color: #c3002c;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: fixed;
     height: 70px;
-    padding: 15px;
+    padding: px;
     width: 100%;
     box-shadow: 0 6px 10px -5px #4e4b4b;
     z-index:1;
@@ -123,9 +123,9 @@ p{
 
 .logo {
     margin-top: 10px;
-    padding: 10px;
-    max-width: 50%;
-    width: 40%;
+    padding: 5px;
+    max-width: 45%;
+    height: 100%;
 }
 
 #menu-btn {
@@ -145,7 +145,7 @@ ul#menu {
 }
 
 svg{
-    height: 40px;
+    height: 30px;
 }
 
 svg#close-menu {
@@ -272,11 +272,12 @@ img.yo{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 15% 20% 25%;
+    margin-top: 200px;
+    margin-bottom: 250px;
     font-size: 30px;
     background: rgba(0,0,0,0.6);
     padding: 20px;
-    margin: 15% 20% 25%;
     border-radius: 10px;
 }
 
@@ -368,9 +369,9 @@ img.yo{
     max-width: 80%;
     background: rgba(201, 201, 201, 0.6);
     margin: auto;
-    padding: 80px;
-    margin-top: 350px;
+    margin-top: 200px;
     margin-bottom: 150px;
+    padding: 80px;
 }
 
 #experiencia-list{
@@ -627,6 +628,7 @@ body.mobile-modoNocturno-active svg#open-icono{
     #Contacto{
         margin: 7%;
         margin-top: 300px;
+        margin-bottom: 200px;
         padding: 25px;
     }
     form{
@@ -639,6 +641,10 @@ body.mobile-modoNocturno-active svg#open-icono{
 
 @media (min-width:1024px){
 
+.logo {
+    min-width: 250px;
+}
+    
 section#algo-de-mi{
     flex-direction: row;
     justify-content: space-evenly;
