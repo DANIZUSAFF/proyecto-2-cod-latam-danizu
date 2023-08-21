@@ -118,20 +118,31 @@
         <section id="Contacto">
             <div>
                 <h2>Contacto</h2>
-            <ul>
-                <li>Telefono +54 9 11 2650 1088</li>
-                <li>Email zusarq@gmail.com</li>
-                <li>Direccion CABA - Argentina</li>
-            
-            </ul>
-            <form id="formulario" action="enviar.php" method="post">
-                <h3>Escribeme</h3>
-                <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="text" name="correo" placeholder="Correo" required>
-                <input type="text" name="telefono" placeholder="Telefono" required>
-                <textarea name="mensaje" placeholder="Escribe aqui" required></textarea>
-                <input type="submit" value="Enviar" id="boton">
-            </form>
+                <ul>
+                    <li>Telefono +54 9 11 2650 1088</li>
+                    <li>Email zusarq@gmail.com</li>
+                    <li>Direccion CABA - Argentina</li>
+                </ul>
+
+                <form id="formulario" action="https://formsubmit.co/zusarq@gmail.com" method="POST">
+                    <h3>Escribeme</h3>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" >
+
+                    <label for="email">Correo Electronico</label>
+                    <input type="email" name="email" id="email" >
+
+                    <label for="phone">Telefono</label>
+                    <input type="phone" name="phone" id="phone" >
+
+                    <label for="coments">Escribe aqui</label>
+                    <textarea name="coments" id="coments" cols="30" rows="5"></textarea>
+                    
+                    <input id="boton" type="submit" value="Enviar">
+
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/" >
+                        <input type="hidden" name="_captcha" value="false" >
+                </form>
             </div>
             
         </section>

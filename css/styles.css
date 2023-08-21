@@ -478,14 +478,7 @@ textarea{
 
 #boton:hover{
     cursor:pointer; 
-}
-
-#respuesta{
-    text-align: center;
-    font-size: 50px;
-    background: rgba(0,0,0,0.6);
-    color: #fafafa;
-    margin-top: 50%;
+    background-color: #0f0f0f
 }
 
 /* FOOTER------------------------------------------------------*/
